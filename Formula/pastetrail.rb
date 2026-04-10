@@ -8,6 +8,10 @@ class Pastetrail < Formula
   depends_on xcode: ["15.0", :build]
   depends_on :macos => :ventura
 
+  # xcodebuild uses its own sandbox-exec for SPM resolution; Homebrew's
+  # build sandbox would nest inside it, which macOS disallows.
+  env :std
+
   def install
     system "xcodebuild",
            "-scheme", "PasteTrail",
