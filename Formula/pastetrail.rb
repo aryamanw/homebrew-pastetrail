@@ -1,8 +1,8 @@
 class Pastetrail < Formula
   desc "macOS menu bar clipboard manager — 20-clip history via ⌘⇧V"
   homepage "https://github.com/aryamanw/PasteTrail"
-  url "https://github.com/aryamanw/PasteTrail/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "adb08a4d5f4170380bd80abfd9ae34618b688e898a36a8fc79ee51252b77b137"
+  url "https://github.com/aryamanw/PasteTrail/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "d6f870592cd7528f039f3b90d94fa4f1cd9e0271bf00d2d23e5c1f38422a12b5"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
